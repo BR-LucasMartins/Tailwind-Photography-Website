@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="assets/css/styles-custom.css">
+
+    <title>Potography Site MJ </title>
+</head>
+
+<body>
+    <!-- Menu Mobile -->
+    <div class="absolute z-30 w-full flex justify-end py-2 pr-5 lg:hidden">
+        <i id="menu-burguer" class="ri-menu-3-line text-3xl z-40 text-gray-50"></i>
+    </div>
+    <div id="links-menu"
+        class="absolute z-30 top-12 bg-black w-full lg:hidden border border-t border-gray-50 py-5 hidden transition ease-in duration-700">
+        <ul class="flex flex-col items-center space-y-3">
+            <li> <a class="nav-link text-base uppercase font-bold text-pink-600" href="#"> Home </a></li>
+            <li> <a class="nav-link text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="#about">
+                    About </a></li>
+            <li> <a class="nav-link text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="#activity">
+                    Activity </a></li>
+            <li> <a class="nav-link text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="#portfolio">
+                    Portfolio </a></li>
+            <li> <a class="nav-link text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="#testimonial">
+                    Testimonial </a></li>
+            <li> <a class="text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="blog.html">
+                    Blog </a></li>
+            <li> <a class="nav-link text-base uppercase font-bold text-gray-50 hover:text-pink-600" href="#contact">
+                    Contact </a></li>
+        </ul>
+    </div>
+
+    <!-- Menu desktop -->
+    <div class="absolute top-10 bg-transparent w-full h-14 hidden lg:flex items-center justify-center z-30">
+        <ul class="lg:flex space-x-14">
+            <li> <a class="text-lg uppercase font-bold text-pink-600" href="#"> Home </a></li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="#about"> About </a></li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="#activity"> Activity
+                </a></li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="#portfolio"> Portfolio
+                </a></li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="#testimonial">
+                    Testimonial </a></li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="blog.html"> Blog </a>
+            </li>
+            <li> <a class="text-lg uppercase font-bold text-gray-50 hover:text-pink-600" href="#contact"> Contact </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Banner -->
+    <div class="w-full relative">
+        <img class="w-full" src="assets/images/banner-img.jpg" alt="bammer home">
+        <div class="absolute w-full h-full top-0 z-10 img-overlay"></div>
+        <div class="absolute top-0 z-20 flex items-center justify-center w-full h-full">
+            <div class="text-center p-12 mt-10">
+                <h1 class="text-gray-100 font-semibold text-center max-w-3xl text-xl lg:text-5xl">A camera is the save
+                    button
+                    for the mind’s eye</h1>
+                <button
+                    class="mt-3 lg:mt-16 bg-transparent rounded-3xl w-48 text-white border border-pink-600 px-3 py-1 uppercase">
+                    Explore
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- photos model -->
+    <div class="relative lg:grid grid-cols-2">
+        <div class="w-full h-full relative">
+            <img class="w-full" src="assets/images/girl1.jpg" alt="girl 1">
+            <div class="absolute w-full h-full top-0 z-10 img-overlay"></div>
+        </div>
+        <div class="w-full h-full relative">
+            <img class="w-full" src="assets/images/girl2.jpg" alt="girl 2">
+            <div class="absolute w-full h-full top-0 z-10 img-overlay"></div>
+        </div>
+    </div>
+    
+    <!-- Content About -->
+    <div class="bg-pink-700 w-full py-24 relative">
+        <div class="w-full mx-auto px-4 flex justify-center lg:absolute z-30 lg:top-0 lg:transform lg:-mt-52">
+            <div id="about" class="lg:grid grid-cols-2 mx-auto lg:max-w-4xl rounded-lg">
+                <div class="w-full relative rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg">
+                    <img class="w-full rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg"
+                        src="assets/images/girl3.jpg" alt="girl 3">
+                    <div
+                        class="absolute w-full h-full top-0 z-10 img-overlay rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg">
+                    </div>
+                </div>
+                <div
+                    class="w-full bg-white p-10  rounded-tr-none lg:rounded-tr-lg rounded-bl-lg lg:rounded-bl-none rounded-br-lg">
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-2xl lg:text-3xl">I am Mary jane</h3>
+                        <h4 class="text-gray-400">Professional photographer</h4>
+                        <div class="bg-pink-700 w-14 h-1 my-4"></div>
+                        <p class="text-sm lg:text-base text-gray-500">Sed do eiusmod tempor incididunt ut labore et dolo
+                            magna aliqua. Ut enim ad minim veniam, quis nostd exercitation ullamco laboris nisi ut
+                            aliquip ex ea mo consequat. Duis aute irure dolor in reprehenderit in ullamco.</p>
+                        <a href="#"
+                            class="bg-pink-700 hover:bg-pink-600 text-white px-3 py-2 rounded-3xl flex justify-center items-center w-36 mt-7">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 lg:px-0 mx-auto mt-20 lg:mt-64 lg:max-w-6xl" id="activity">
+            <div class="flex justify-between">
+                <h2 class="text-white uppercase text-xl lg:text-2xl font-semibold mb-">Recent works</h2>
+                <div class="flex space-x-6">
+                    <div
+                        class="swiper-button-prev work-prev text-white bg-transparent rounded-2xl border w-6 h-6 border-white hover:bg-white hover:text-pink-600">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div
+                        class="swiper-button-next work-next text-white bg-transparent rounded-2xl border w-6 h-6 border-white hover:bg-white hover:text-pink-600">
+                        <i class="ri-arrow-right-s-line "></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-10">
+                <div class="relative mx-auto overflow-hidden p-0 swiper-recent-works">
+                    <div class="swiper-wrapper lg:py-6">
+                        <div class="swiper-slide">
+                            <div class="card-recent-works relative rounded-2xl">
+                                <img class="w-full  rounded-3xl" src="assets/images/recent-img1.jpg" alt="">
+                                <div
+                                    class="absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                    <div class="pb-3 lg:pb-5">
+                                        <h5 class="font-semibold text-xl text-white">Model photography</h5>
+                                        <p class="text-sm">Digital, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-recent-works relative rounded-2xl">
+                                <img class="w-full  rounded-3xl" src="assets/images/recent-img2.jpg" alt="">
+                                <div
+                                    class="absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                    <div class="pb-3 lg:pb-5">
+                                        <h5 class="font-semibold text-xl text-white">Product photography</h5>
+                                        <p class="text-sm">Digital, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-recent-works relative rounded-2xl">
+                                <img class="w-full  rounded-3xl" src="assets/images/recent-img3.jpg" alt="">
+                                <div
+                                    class="absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                    <div class="pb-3 lg:pb-5">
+                                        <h5 class="font-semibold text-xl text-white">Tour and potrait</h5>
+                                        <p class="text-sm">Digital, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-recent-works relative rounded-2xl">
+                                <img class="w-full  rounded-3xl" src="assets/images/recent-img4.jpg" alt="">
+                                <div
+                                    class="absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                    <div class="pb-3 lg:pb-5">
+                                        <h5 class="font-semibold text-xl text-white">Classical photography</h5>
+                                        <p class="text-sm">Digital, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-recent-works relative rounded-2xl">
+                                <img class="w-full  rounded-3xl" src="assets/images/recent-img3.jpg" alt="">
+                                <div
+                                    class="absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                    <div class="pb-3 lg:pb-5">
+                                        <h5 class="font-semibold text-xl text-white">Classical photography</h5>
+                                        <p class="text-sm">Digital, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTIFOLIOS-->
+    <div class="relative w-full  py-12 lg:py-24 bg-no-repeat bg-right-bottom"
+        style="background-image: url('assets/images/camera-bg.jpg'); background-color: #f2d5d7;" id="portfolio">
+        <div class="container px-4 lg:px-0 mx-auto lg:max-w-6xl">
+            <div>
+                <h2 class="font-semibold text-xl lg:text-2xl text-gray-700"> PORTFOLIOS</h2>
+            </div>
+            <div class="mt-10 lg:grid grid-cols-4 grid-rows-3 gap-3  space-y-5 lg:space-y-0">
+                <div class="relative bx-1 rounded-2xl col-span-1 row-span-1">
+                    <img class="w-full h-full object-fill  rounded-3xl" src="assets/images/portfolio-img1.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white">Natural site</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-2 rounded-2xl col-span-2 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img2.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white">Vacation special photography </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-3 rounded-2xl col-span-1 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img3.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Historical place shots </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-4 rounded-2xl col-span-1 row-span-2">
+                    <img class="w-full h-full object-cover rounded-3xl" src="assets/images/portfolio-img4.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Product photography </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-5 rounded-2xl col-span-1 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img5.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Lorem ipsum dolor </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-6 rounded-2xl col-span-2 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img6.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Lorem ipsum dolor </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-7 rounded-2xl col-span-2 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img7.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Portraits </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bx-8 rounded-2xl col-span-1 row-span-1">
+                    <img class="w-full h-full object-fill rounded-3xl" src="assets/images/portfolio-img8.png" alt="">
+                    <div
+                        class="absolute w-full h-full p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-white">
+                        <div class="pb-3 lg:pb-5">
+                            <h5 class="font-semibold text-xl text-white"> Wedding photography </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities of the Month-->
+    <div class="bg-pink-50 py-20">
+        <div class="container mx-auto lg:max-w-6xl p-3">
+            <div class="flex justify-between items-end">
+                <h2 class="text-xl lg:text-3xl font-semibold text-gray-600 uppercase"> Activity of the month </h2>
+                <div class="flex space-x-6">
+                    <div
+                        class="swiper-button-prev activities-prev text-gray-800 bg-transparent rounded-2xl border w-6 h-6 border-gray-800 hover:bg-gray-800 hover:text-white">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div
+                        class="swiper-button-next activities-next text-gray-800 bg-transparent rounded-2xl border w-6 h-6 border-gray-800 hover:bg-gray-800 hover:text-white">
+                        <i class="ri-arrow-right-s-line "></i>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mt-12 mx-auto overflow-hidden p-0 swiper-activities">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="relative rounded-2xl">
+                            <img class="w-full  rounded-3xl" src="assets/images/activity-img1.png" alt="">
+                            <div class="text-activity absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                <div class="p-3 lg:p-5  flex flex-col space-y-5">
+                                    <h5 class="text-white text-xl lg:text-2xl cursor-default">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                                    <a class="text-white text-xl lg:hidden" href="#">Read more <i class="ri-arrow-right-double-fill"></i>  </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-2xl">
+                            <img class="w-full  rounded-3xl" src="assets/images/activity-img2.png" alt="">
+                            <div class="text-activity absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                <div class="p-3 lg:p-5  flex flex-col space-y-5">
+                                    <h5 class="text-white text-xl lg:text-2xl cursor-default">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                                    <a class="text-white text-xl lg:hidden" href="#">Read more <i class="ri-arrow-right-double-fill"></i>  </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-2xl">
+                            <img class="w-full  rounded-3xl" src="assets/images/activity-img3.png" alt="">
+                            <div class="text-activity absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                <div class="p-3 lg:p-5  flex flex-col space-y-5">
+                                    <h5 class="text-white text-xl lg:text-2xl cursor-default">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                                    <a class="text-white text-xl lg:hidden" href="#">Read more <i class="ri-arrow-right-double-fill"></i>  </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-2xl">
+                            <img class="w-full  rounded-3xl" src="assets/images/activity-img2.png" alt="">
+                            <div class="text-activity absolute w-full h-full p-3 lg:p-5 top-0 z-10 card-img-overlay rounded-3xl flex items-end text-pink-600 hover:text-white">
+                                <div class="p-3 lg:p-5  flex flex-col space-y-5">
+                                    <h5 class="text-white text-xl lg:text-2xl cursor-default">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                                    <a class="text-white text-xl lg:hidden" href="#">Read more <i class="ri-arrow-right-double-fill"></i>  </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- customers comments -->
+    <div class="relative" id="testimonial">
+        <img class="w-full bg-img" src="assets/images/about-me-img.jpg" alt="">
+        <div class="absolute top-0 p-5 w-full h-full" style="background: rgba(233, 14, 101, 0.902);">
+            <h2 class="my-4 lg:my-14 text-center text-white text-xl lg:text-3xl font-semibold uppercase">People says about me</h2>
+            <div class="w-full mt-16 lg:mt-24 mx-auto overflow-hidden p-0 swiper-testimonials lg:max-w-screen-sm">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col  gap-10 lg:gap-16 items-center">
+                        <img src="assets/images/quote-icon.png" alt="quote icon">
+                        <p class="text-white text-base text-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo texto 1</p>
+                    </div>
+                    <div class="swiper-slide flex flex-col  gap-10 lg:gap-16 items-center">
+                        <img src="assets/images/quote-icon.png" alt="quote icon">
+                        <p class="text-white text-base text-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo texto 2</p>
+                    </div>
+                    <div class="swiper-slide flex flex-col  gap-10 lg:gap-16 items-center">
+                        <img src="assets/images/quote-icon.png" alt="quote icon"> 
+                        <p class="text-white text-base text-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo texto 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4 lg:px-0 mx-auto mt-6 lg:mt-18 xl:mt-20 lg:max-w-6xl flex justify-center">
+                <ol class="carousel-indicators flex justify-center items-center gap-8">
+                    <li class="flex flex-col items-center testimonial-pagination cursor-pointer" > 
+                        <img class="rounded-full border border-white p-1 opacity-50 lg:w-24 lg:h-24 w-16 h-16" src="assets/images/about-me-img1.png" alt=""> 
+                        <span class="mt-3 text-white text-lg font-semibold hidden">Eddie Brock</span> 
+                    </li>
+                    <li class="flex flex-col items-center testimonial-pagination active cursor-pointer " > 
+                        <img class="rounded-full border border-white p-1 opacity-50 lg:w-24 lg:h-24 w-16 h-16" src="assets/images/about-me-img2.png" alt=""> 
+                        <span class="mt-3 text-white text-lg font-semibold hidden">Liz Allen</span> 
+                    </li>
+                    <li class="flex flex-col items-center testimonial-pagination cursor-pointer"> 
+                        <img class="rounded-full border border-white p-1 opacity-50 lg:w-24 lg:h-24 w-16 h-16" src="assets/images/about-me-img3.png" alt=""> 
+                        <span class="mt-3 text-white text-lg font-semibold hidden">Gwen Stacy</span> 
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social networks -->
+    <div class="py-10 lg:py-28" style="background-color: #f7f0f1;">
+        <div class="mx-auto lg:max-w-6xl p-7 lg:p-3 lg:flex">
+            <div class="w-full lg:w-1/2">
+                <div class="bg-white p-5 lg:p-8 pt-12 lg:pt-16 relative mx-auto h-full flex flex-col rounded-2xl card-twitter">
+                    <div class="flex items-center mb-4"> 
+                        <img class="mr-7" src="assets/images/twit-girl-img.png" alt="">
+                      <div class="block">
+                        <h5 class="mb-0 text-2xl font-semibold" style="color: #03a9f4;">Mary Jane</h5>
+                        <p>@maryphotography</p>
+                      </div>
+                    </div>
+                    <p class="text-justify"> “Sed ut perspiciatis unde omnis iste nats error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. </p>
+                    <div> 
+                        <a href="#" class="bg-blue-600 w-32 flex justify-center items-center py-1 mt-5 rounded-3xl text-white cursor-pointer float-right">Follow</a> 
+                    </div>
+
+                    <img class="absolute top-0 left-0 logo-twitter" src="assets/images/twitter-logo.png" alt="logo twitter">
+                  </div>
+            </div>
+           <div class="w-full lg:w-1/2 px-0 lg:px-5 flex flex-col justify-center mt-14">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl lg:text-2xl text-gray-600 uppercase font-semibold"> Instagram feed </h2>
+                    <div class="flex space-x-6">
+                        <div
+                            class="swiper-button-prev instagram-prev text-gray-800 bg-transparent rounded-2xl border w-6 h-6 border-gray-800 hover:bg-gray-800 hover:text-white top-2">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div
+                            class="swiper-button-next instagram-next text-gray-800 bg-transparent rounded-2xl border w-6 h-6 border-gray-800 hover:bg-gray-800 hover:text-white top-2">
+                            <i class="ri-arrow-right-s-line "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full py-5">
+                    <div class="relative mt-6 mx-auto overflow-hidden p-0 swiper-instagram">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="relative rounded-2xl">
+                                    <img class="w-full  rounded-3xl" src="assets/images/feed-img1.png" alt="">
+                                    <div class="absolute top-0 w-full h-full  z-10 card-img-post-overlay rounded-3xl"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative rounded-2xl">
+                                    <img class="w-full  rounded-3xl" src="assets/images/feed-img2.png" alt="">
+                                    <div class="absolute top-0 w-full h-full  z-10 card-img-post-overlay rounded-3xl"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative rounded-2xl">
+                                    <img class="w-full  rounded-3xl" src="assets/images/feed-img1.png" alt="">
+                                    <div class="absolute top-0 w-full h-full  z-10 card-img-post-overlay rounded-3xl"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative rounded-2xl">
+                                    <img class="w-full  rounded-3xl" src="assets/images/feed-img2.png" alt="">
+                                    <div class="absolute top-0 w-full h-full  z-10 card-img-post-overlay rounded-3xl"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="mx-auto lg:max-w-6xl pt-8 lg:pt-32 text-center">
+            <h2 class="mb-5 text-lg lg:text-2xl text-gray-600 font-semibold uppercase">Find me on social media</h2>
+        <div class="w-full flex justify-center">
+            <ul class="flex gap-6">
+            <li class="border border-gray-700 rounded-full w-12 h-12 flex items-center justify-center bg-transparent hover:bg-white"> 
+                <a class="w-full h-full flex items-center justify-center" href="https://www.facebook.com/fh5co">
+                    <img class="max-w-full" src="assets/images/facebook.png" alt="">
+                </a> 
+            </li>
+            <li class="border border-gray-700 rounded-full w-12 h-12 flex items-center justify-center bg-transparent hover:bg-white"> 
+                <a class="w-full h-full flex items-center justify-center" href="https://twitter.com/fh5co">
+                    <img class="max-w-full" src="assets/images/twitter.png" alt="">
+                </a> 
+            </li>
+            <li class="border border-gray-700 rounded-full w-12 h-12 flex items-center justify-center bg-transparent hover:bg-white"> 
+                <a class="w-full h-full flex items-center justify-center" href="#">
+                    <img class="max-w-full" src="assets/images/pinterest.png" alt="">
+                </a> 
+            </li>
+            <li class="border border-gray-700 rounded-full w-12 h-12 flex items-center justify-center bg-transparent hover:bg-white"> 
+                <a class="w-full h-full flex items-center justify-center" href="#">
+                    <img class="max-w-full" src="assets/images/google-plus.png" alt="">
+                </a> 
+            </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Contact -->
+    <footer class="w-full" id="contact"> 
+        <div class="w-full lg:flex">
+            <div class="w-full lg:w-1/2">
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13035.46901327725!2d-80.85396551628644!3d35.234674411422155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a03af474f38f%3A0xf8301daadf5f7670!2sFourth+Ward%2C+Charlotte%2C+NC%2C+USA!5e0!3m2!1sen!2sin!4v1551001218548"  style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="w-full lg:w-1/2 py-12" style="background-color: #e90e65;">
+               <div class="w-full h-full flex justify-center items-center">
+                    <div class="w-full lg:max-w-sm mx-4 bg-white flex flex-col items-center rounded-2xl p-9">
+                        <h3 class="text-xl uppercase text-pink-600 font-semibold mb-10">Contact me</h3>
+                        <form class="w-full flex flex-col justify-center" action="">
+                            <input  type="text" class="bg-input mb-5 h-12 w-full rounded-3xl p-6 outline-none text-base border-2 border-transparent focus:border-blue-300" placeholder="Your Name">
+                            <input type="text" class="bg-input mb-5 h-12 w-full rounded-3xl p-6 outline-none text-base border-2 border-transparent focus:border-blue-300" placeholder="Your Email">
+                            <textarea class="bg-input mb-5 h-52 w-full rounded-2xl p-6 outline-none text-base border-2 border-transparent focus:border-blue-300 overflow-hidden" placeholder="Your Message"></textarea>
+                            <button class="bg-pink-600 rounded-3xl text-white text-lg w-36 py-3 mx-auto" type="submit">Send</button>
+                        </form>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="w-full py-6 flex justify-center items-center" style="background: #282526;">
+                <p class="text-center text-white text-base px-3">
+                    <a class="hover:text-pink-600" href="https://freehtml5.co/" target="_blank"> &copy; 2024 Pothography Site MJ</a>  &nbsp;  |  &nbsp; Design by &nbsp;
+                    <a class="hover:text-pink-600" href="https://freehtml5.co/" target="_blank">Lucas Martins </a> &nbsp; | &nbsp;  All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
